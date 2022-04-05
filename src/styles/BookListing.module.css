@@ -1,0 +1,88 @@
+@import "../styles/_colors.css";
+@import "../styles/_fonts.css";
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.booksItem {
+  width: 350px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+  background-color: var(--block-light-theme-color);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.booksItem h3 {
+  text-align: center;
+  height: 52px;
+}
+
+.booksItemContent {
+  display: flex;
+}
+
+.booksItemContent img {
+    width: 150px;
+    height: 188px;
+}
+
+.booksItemContent ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.listItem {
+  display: flex;
+  background-color: var(--block-light-theme-color);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 1170px) {
+  .listItem {
+    flex-direction: column;
+  }
+}
+
+.listItem ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0 30px;
+}
+
+@media (max-width: 800px) {
+  .listItem ul {
+    flex-direction: column;
+  }
+}
+
+
+.listItem ul li {
+  margin-right: 10px;
+}
+
+.listView {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}

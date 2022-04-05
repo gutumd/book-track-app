@@ -1,0 +1,63 @@
+@import "../styles/_colors.css";
+@import "../styles/_fonts.css";
+
+.navbar {
+  background-color: var(--block-light-theme-color);
+  padding: 10px 40px;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+}
+
+.navbar h1 {
+  font-family: NunitoSans-Bold;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.navbarItems {
+  list-style: none;
+  padding: 0;
+}
+
+.navbarItems li {
+  margin-right: 20px;
+}
+
+.navbarItems button {
+  padding: 10px 20px;
+  color: var(--bg-light-theme-color);
+  background-color: var(--light-theme-font-color);
+  border: none;
+  font-family: NunitoSans-Bold;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--bg-light-theme-color);
+  transition: all 0.5s ease;
+}
+
+.navbarItems button:hover {
+  color: var(--light-theme-font-color);
+  background-color: var(--bg-light-theme-color);
+  border: 1px solid var(--block-dark-theme-color);
+}
+
+.themeToggle {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.themeToggle img {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 687px) {
+  .navbar {
+    flex-direction: column;
+  }
+}

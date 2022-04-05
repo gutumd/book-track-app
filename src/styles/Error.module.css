@@ -1,0 +1,17 @@
+.error {
+  display: flex;
+  padding-top: 75px;
+  margin: 0 auto;
+}
+
+@media (max-width: 685px) {
+  .error {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .error {
+    width: 300px;
+  }
+}

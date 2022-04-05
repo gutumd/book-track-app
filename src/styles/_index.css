@@ -1,0 +1,12 @@
+@import "./_colors";
+@import "./_fonts.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-light-theme-color);
+  color: var(--light-theme-font-color);
+  font-family: NunitoSans-Regular;
+  transition: all 0.5s ease;
+}

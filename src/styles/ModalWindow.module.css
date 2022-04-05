@@ -1,0 +1,75 @@
+.modalWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalInner {
+  width: 700px;
+  height: auto;
+  background-color: var(--block-light-theme-color);
+  color: var(--light-theme-font-color);
+  border-radius: 25px;
+  padding: 30px;
+  position: relative;
+}
+
+.modalInner h3 {
+  text-align: center;
+}
+
+.modalInner button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.modalInner button img {
+  width: 20px;
+  height: 20px;
+}
+
+.bookInfoWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookInfo ul {
+  padding: 0;
+  margin: 10px;
+}
+
+.bookInfo ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.bookInfo ul p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
